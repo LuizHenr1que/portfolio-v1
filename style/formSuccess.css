@@ -1,0 +1,29 @@
+body{
+    background:#0f101b;
+    color: #fff;
+    font-family: "Poppins";
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: auto;
+}
+.content-img{
+    text-align:center;
+}
+.content-img img{
+    width: 50%;
+    min-width: 200px;
+    max-width: 500px;
+    margin: auto;
+}
+.content-text h1, .content-text h2{
+    text-align:center;
+}
+a{
+    text-decoration: none;
+    color: #246CEA
+}
