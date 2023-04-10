@@ -1,0 +1,108 @@
+/* === HOME === */
+.content-home{
+    display: grid;
+    grid-template-columns: 10% 50% 40%;
+    align-items: center;
+    margin: auto;
+}
+.content-home #social-networks{
+    display: flex;
+    flex-direction: column;
+}
+.content-home #social-networks a{
+    font-size: 1.5rem;
+    margin: 5px auto;
+    color: var(--azul);
+}
+.content-home p{
+    text-align: left;
+    width: 72%;
+    min-width: 300px;
+    max-width: 500px;
+}
+.content-home #photo{
+    margin-left: 40px;
+}
+.content-home #photo img{
+    width: 100%;
+    min-width: 200px;
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+
+
+@media (min-width: 1700px){
+    /* === HOME === */
+    .content-home{
+        grid-template-columns: 10% 40% 50%;
+    }
+
+}
+
+@media (max-width: 768px){
+     /* === HOME ===*/ 
+     .content-home{
+        grid-template-columns: 100%;
+        grid-template-areas: 'photo' 'social' 'intro';
+        align-items:center;
+        justify-content:center;
+        margin: auto;
+    }
+    .content-home #social-networks{
+        grid-area: social;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .content-home #social-networks a{
+        margin: 10px;
+    }
+    .content-home #introduction{
+        grid-area: intro;
+        text-align:center;
+    }
+    .content-home #photo{
+        grid-area: photo;
+        margin: 0;
+        text-align:center;
+    }
+    .content-home p{
+        text-align: center;
+        width: 72%;
+        min-width: 270px;
+        max-width: 500px;
+        margin: 15px auto;
+    }
+    .content-home #photo img{
+        max-width: 230px;
+    }
+
+    .content-home{
+        grid-template-columns: 100%;
+        grid-template-areas: 'photo' 'social' 'intro';
+        align-items:center;
+        justify-content:center;
+        margin: auto;
+    }
+    .content-home #social-networks{
+        grid-area: social;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .content-home #social-networks a{
+        margin: 10px;
+    }
+    .content-home #introduction{
+        grid-area: intro;
+        text-align:center;
+    }
+    .content-home #photo{
+        grid-area: photo;
+        margin: 0;
+        text-align:center;
+    }
+    .content-home #photo img{
+        max-width: 250px;
+    }
+}
+

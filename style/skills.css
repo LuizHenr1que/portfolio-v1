@@ -1,0 +1,68 @@
+/* === SKILLS === */
+section.skills{
+    position: relative;
+}
+.content-skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.skill{
+    display: flex;
+    justify-content: center;
+    align-items:Center;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    cursor: pointer;
+    background: var(--darkSecond);
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+.skill:hover{
+    transform: translateY(-15px);
+    box-shadow: rgb(33 150 243 / 50%) 0px 5px, rgb(3 169 244 / 40%) 0px 10px, rgb(3 169 244 / 30%) 0px 15px, rgb(3 169 244 / 20%) 0px 20px, rgb(3 169 244 / 10%) 0px 25px;
+    background: #27253f;
+
+}
+
+.content-skills .card-link{
+    margin: 0;
+}
+.skill img{
+    width: 130px;
+    height: 130px;
+}
+#skills-interaction{
+    display: flex;
+    position: absolute;
+    top: 147px;
+    margin: 0;
+    padding: 0;
+    color: #898888;
+}
+
+@media(max-width: 500px){
+    section.skills{
+        height: auto;
+    }
+}
+
+@media(max-width: 425px){
+    /* == SKILS == */
+    section.skills{
+        padding-bottom: 0;
+    }
+    .skill{
+        width: 150px;
+        height: 150px;
+    }
+    .skill img{
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+    }
+
+
+}

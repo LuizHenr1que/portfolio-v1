@@ -1,0 +1,35 @@
+/* === ABOUT ME === */
+.content-about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.content-about .image-about{
+    display: flex;
+    justify-content:center;
+}
+.content-about .image-about img{
+    width: 70%;
+    min-width: 200px;
+    max-width: 350px;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px){
+     /* === ABOUT ME ==== */
+    .content-about{
+        grid-template-columns: 100%;
+    }
+    .content-about .image-about img{
+        width: 50%;
+    }
+    .content-about .info-about p{
+        margin: 15px auto;
+    }
+    .content-about .info-about{
+        text-align:center;
+    }
+}

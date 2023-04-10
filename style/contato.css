@@ -1,0 +1,51 @@
+/* === CONTACT === */
+section.contact{
+    padding-top: 43px;
+}
+.content-contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.info-contact > div{    
+    display: flex;
+    align-items:baseline;
+}
+.info-contact div h1,
+.info-contact div p{
+    word-break: break-all;
+}
+.info-contact div i {
+    font-size: 1.4rem;
+    margin-right: .5rem;
+}
+
+.form-contact .field input,
+.form-contact .field textarea{
+    width: 100%;
+
+    background: var(--darkSecond);
+    border: none;
+    border-radius: 10px;
+
+    margin: 10px auto ;
+    padding: 10px;
+    color: #fff;
+    resize: none;
+}
+.form-contact .field input::placeholder,
+.form-contact .field textarea::placeholder{
+    color: rgb(216, 213, 213);
+}
+
+@media (max-width: 1024px){
+    /* === CONTATO === */
+    section.contact{
+        height: auto;
+    }
+    .content-contact{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+}

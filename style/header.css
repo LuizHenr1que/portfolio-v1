@@ -1,0 +1,233 @@
+header{
+    position: fixed;
+    width: 100vw;
+    background: var(--darkBlue);
+    z-index: 120;
+}
+
+header nav .logo-header a{
+    font-size: 1.5rem;
+}
+
+header .logo-header .menu-toggle{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 32px;
+    cursor: pointer;
+}
+
+header nav.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav.navbar ul.nav li.nav-item i.bi{
+    display: none;
+}
+
+header .logo-header .menu-toggle .one,
+header .logo-header .menu-toggle .two,
+header .logo-header .menu-toggle .three{
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    margin: 3px auto;
+    transition: 0.3s;
+}
+
+header .logo-header .menu-toggle.menuActive .one{
+    /* transform: rotate(45deg) translate(0px, 13px); */
+    transform: rotate(45deg) translate(4px, 13px);
+}  
+
+header .logo-header .menu-toggle.menuActive .two{
+    opacity: 0;
+}
+
+header .logo-header .menu-toggle.menuActive .three{
+    /* transform: rotate(-45deg) translate(0px, -12px); */
+    transform: rotate(-45deg) translate(0px, -9px);
+}
+
+
+/*header ul.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top: 57px;
+    right: -50vw;
+    width: 50vw;
+    height: 100vh;
+
+    transition:.5s;
+    padding: 10px;
+    background: var(--darkSecond);
+}
+*/
+
+header ul.nav.showMenu{
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1700px){
+    /* === HEADER === */
+    header nav.navbar{
+        justify-content: space-around;
+    }
+}
+
+
+@media (max-width: 1024px){
+    /* === HEADER ==== */
+    header nav.navbar{
+        margin-right: 10px;
+    }
+    /* ATIVANDO MENU RESPONSIVO */
+    header nav.navbar ul.nav li.nav-item{
+        display: flex;
+        align-items: center;
+        margin: 10px auto;
+    }
+    header nav.navbar ul.nav li.nav-item i.bi{
+        display: block;
+        font-size: 19px;
+    }
+
+    header nav.navbar ul.nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        position: absolute;
+        top: 55px;
+        right: -200vw;
+        width: 50vw;
+        height: 100vh;
+    
+        transition:.5s;
+        padding: 10px;
+        background: var(--darkSecond);
+    }
+    header nav.navbar ul.nav.showMenu{
+        right: -10px;
+    }
+
+    header nav.navbar .menu-toggle{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        width: 32px;
+        cursor: pointer;
+    }
+    header nav.navbar .menu-toggle .one,
+    header nav.navbar .menu-toggle .two,
+    header nav.navbar .menu-toggle .three{
+        height: 3px;
+        width: 100%;
+        background: #fff;
+        margin: 3px auto;
+        transition: 0.3s;
+    }
+    header nav.navbar .menu-toggle.menuActive .one{
+        /* transform: rotate(45deg) translate(0px, 13px); */
+        transform: rotate(45deg) translate(4px, 13px);
+    }   
+    header nav.navbar .menu-toggle.menuActive .two{
+        opacity: 0;
+    }
+    header nav.navbar .menu-toggle.menuActive .three{
+        /* transform: rotate(-45deg) translate(0px, -12px); */
+        transform: rotate(-45deg) translate(0px, -9px);
+    }
+    main.desfocar{
+        filter: blur(3px);
+    }
+}
+
+@media (min-width: 770px){
+     /* ==== HEADER ==== */
+    header nav.navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav .logo-header{
+        width: auto;
+    }
+    header nav .logo-header .menu-toggle{
+        display: none;
+    }
+    header ul.nav{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 0;
+        right: 0;
+        height: auto;
+        transition: none;
+        padding: 0;
+    }
+    header nav ul.nav .nav-item{
+        margin: 10px auto;
+    }
+}   
+
+@media(max-width: 425px){
+    /* === HEADER === */
+    header nav.navbar ul.nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        position: absolute;
+        top: 55px;
+        right: -200VW;
+        width:  100vw;
+        height: 100vh;
+    
+        transition:.5s;
+        padding: 10px;
+        background: var(--darkSecond);
+    }
+    header ul.nav.showMenu{
+        width: 80vw;
+    }
+}
+
+
+
+
+

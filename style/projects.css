@@ -1,0 +1,45 @@
+/* === PROJETOS === */
+.content-projects{
+    width: 100%;
+    margin: auto;
+}
+.carousel.slide{
+    height: 100%;
+}
+.carousel-indicators{
+    bottom: -40px;
+}
+.carousel-inner{
+    width: 70%;
+    margin: auto;
+}
+.content-carousel{
+    padding: 30px;
+    width: 95%;
+    margin: auto;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+.content-carousel img{
+    width: 100%;
+    max-width: 200px;
+    object-fit: cover;
+}
+.content-carousel .info-project{
+    display: flex;
+}
+.content-projects .info-project .description-project{
+    margin: auto 20px;
+}
+
+
+@media (max-width: 1024px){
+   /* ==== PROJETOS ==== */
+    .content-carousel .info-project{
+        display: flex;
+        flex-direction: column;
+    }
+    .content-projects .info-project .description-project{
+        margin: 20px auto;
+    }   
+}

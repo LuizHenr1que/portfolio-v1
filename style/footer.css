@@ -1,0 +1,22 @@
+/* === FOOTER === */
+footer{
+    padding: 40px;
+    height: auto;
+    margin-top: 74px;
+    background: var(--darkSecond);
+}
+.content-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-networks a{
+    margin: auto 5px;
+}
+.social-networks a:hover{
+    text-decoration: none;
+}
+footer p {
+    font-size: 1rem;
+    text-align:center;
+}
