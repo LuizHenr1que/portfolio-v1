@@ -27,6 +27,11 @@ header nav.navbar ul.nav li.nav-item i.bi{
     display: none;
 }
 
+ header .nav-item a:hover {
+    color: var(--azul);
+    transition: 1s;
+}
+
 header .logo-header .menu-toggle .one,
 header .logo-header .menu-toggle .two,
 header .logo-header .menu-toggle .three{
