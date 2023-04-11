@@ -3,6 +3,7 @@ header{
     width: 100vw;
     background: var(--darkBlue);
     z-index: 120;
+    padding: 0 20px;
 }
 
 header nav .logo-header a{
@@ -51,7 +52,7 @@ header .logo-header .menu-toggle.menuActive .three{
 }
 
 
-/*header ul.nav{
+header ul.nav{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,44 +65,12 @@ header .logo-header .menu-toggle.menuActive .three{
 
     transition:.5s;
     padding: 10px;
-    background: var(--darkSecond);
 }
-*/
+
 
 header ul.nav.showMenu{
     right: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 1700px){
     /* === HEADER === */
