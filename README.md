@@ -3,7 +3,7 @@
 ![preview](./.github/screen.png)
 >Layout totalmente rensponsivo.
 
-[🔗Clique aqui para acessar](https://luizhenr1que.github.io/portfolio/)
+[🔗Clique aqui para acessar](https://luizhenr1que.github.io/oldportfolio/)
 
 ## 🛠 Tecnologias
 - HTML
